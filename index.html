@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="py-5 col-md-7 wrapper rounded-5 mx-auto px-5 mt-5 text-center">
+    <h2 class="mainText mb-3 text-info">Smart Login System</h2>
+    <form>
+      <div class="mb-3 position-relative">
+        <label for="firstNameInput"><i class="fa-solid fa-user"></i></label>
+        <input type="text" required name="firstName" id="firstNameInput" placeholder="Enter Your First Name"
+          class="form-control bg-transparent" />
+        <h6 class="text-danger mt-2 text-start d-none" id="nameAlert">
+          Enter a valid name
+        </h6>
+      </div>
+      <div class="mb-3 position-relative">
+        <label for="emailInput"><i class="fa-solid fa-envelope"></i></label>
+        <input type="text" required name="email" id="emailInput" placeholder="Enter Your Email"
+          class="form-control bg-transparent" />
+        <h6 class="text-danger mt-2 text-start d-none" id="emailAlert">
+          Enter a valid email
+        </h6>
+      </div>
+      <div class="mb-3 position-relative">
+        <label for="passwordInput"><i class="fa-solid fa-lock"></i></label>
+        <input type="password" required name="password" id="passwordInput" placeholder="Enter Your Password"
+          class="form-control bg-transparent" />
+        <h6 class="text-danger mt-2 text-start d-none" id="passwordAlert">
+          Enter a valid password
+        </h6>
+      </div>
+      <p id="successMessage" class="text-capitalize d-none">
+        sign up successfully
+      </p>
+      <button type="button" id="signUpBtn" onclick="signUP()" class="btn btn-outline-info w-100">
+        Sign Up
+      </button>
+    </form>
+    <p class="text-center text-white mt-3">
+      Already have an account ?<a target="_blank" class="ms-2" href="login.html">Login</a>
+    </p>
+  </div>
+  <div>
+  </div>
+
+  <script src="js/mian.js"></script>
+</body>
+
+</html>

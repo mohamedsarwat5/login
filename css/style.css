@@ -1,0 +1,104 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgcolor: #24353f;
+  --darkBlue: #17a2b8;
+  --fontColor: #ced4da;
+}
+
+body {
+  background-color: var(--bgcolor);
+  padding: 15px;
+}
+
+
+
+
+.wrapper {
+  background-color: var(--bgcolor);
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.mainText {
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+.welcome_text {
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+input {
+  color: var(--fontColor) !important;
+  height: 50px;
+  padding-left: 60px !important;
+}
+
+input::placeholder {
+  color: var(--fontColor) !important;
+}
+
+a {
+  color: #0dcaf0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #0dcaf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+
+.logo:hover {
+  text-decoration: none;
+}
+
+nav {
+  background-color: var(--bgcolor);
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+
+
+}
+
+.welcome {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.cbtn {
+  color: #0dcaf0;
+  border: 1px solid #0dcaf0;
+}
+
+#successMessage {
+  color: #28a745;
+  font-size: 1.4rem;
+}
+
+
+@media (max-width:992px) {
+  #logout {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
